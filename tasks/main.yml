@@ -1,2 +1,10 @@
 ---
 # tasks file for ansible-role-histtimeformat
+
+- name: Copy '/etc/profile.d/histtimeformat.sh' file.
+  copy:
+    src: files/etc/profile.d/histtimeformat.sh
+    dest: /etc/profile.d/histtimeformat.sh
+    owner: root
+    group: root
+    mode: 0644
