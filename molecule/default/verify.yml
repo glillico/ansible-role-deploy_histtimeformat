@@ -1,0 +1,21 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+
+  tasks:
+    - name: Retrieve the file information for '/etc/profile.d/histtimeformat.sh'.
+      stat:
+        path: /etc/profile.d/histtimeformat.sh
+      register: remote_file
+
+    - name: Test that the '/etc/profile.d/histtimeformat.sh' file was created correctly.
+      assert:
+        that:
+          - remote_file.stat.exists
+          - remote_file.stat.isreg
+          - remote_file.stat.path == '/etc/profile.d/histtimeformat.sh'
+          - remote_file.stat.mode == '0644'
+          - remote_file.stat.pw_name == 'root'
+          - remote_file.stat.gr_name == 'root'
