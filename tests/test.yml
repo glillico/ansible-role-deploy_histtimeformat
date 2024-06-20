@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-histtimeformat
+    - ansible-role-deploy_histtimeformat

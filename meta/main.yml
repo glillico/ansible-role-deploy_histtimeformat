@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: histtimeformat
+  role_name: deploy_histtimeformat
   author: glillico
   description: Copies /etc/profile.d/histtimeformat.sh file to an ansible managed node.
   license: license (MIT)

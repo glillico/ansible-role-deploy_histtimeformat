@@ -1,6 +1,6 @@
-# Ansible Role : histtimeformat
+# Ansible Role : deploy_histtimeformat
 
-[![CI](https://github.com/glillico/ansible-role-histtimeformat/workflows/CI/badge.svg)](https://github.com/glillico/ansible-role-histtimeformat/actions?query=workflow%3ACI)
+[![CI](https://github.com/glillico/ansible-role-deploy_histtimeformat/workflows/CI/badge.svg)](https://github.com/glillico/ansible-role-deploy_histtimeformat/actions?query=workflow%3ACI)
 
 Copies a script into /etc/profile.d/ thart will be run at login buy the bash shell, and sets the HISTTIMEFORMAT environment variable.
 
@@ -34,7 +34,7 @@ None.
 
     - hosts: servers
       roles:
-         - glillico.histtimeformat
+         - glillico.deploy_histtimeformat
 
 ## License
 

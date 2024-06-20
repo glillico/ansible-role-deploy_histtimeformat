@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    working-directory: 'glillico.histtimeformat'
+    working-directory: 'glillico.deploy_histtimeformat'
 
 jobs:
   lint:
@@ -21,7 +21,7 @@ jobs:
       - name: Check out git repository.
         uses: actions/checkout@v4
         with:
-          path: 'glillico.histtimeformat'
+          path: 'glillico.deploy_histtimeformat'
 
       - name: Setup python 3.
         uses: actions/setup-python@v5
@@ -50,7 +50,7 @@ jobs:
       - name: Check out git repository.
         uses: actions/checkout@v4
         with:
-          path: 'glillico.histtimeformat'
+          path: 'glillico.deploy_histtimeformat'
 
       - name: Setup python 3.
         uses: actions/setup-python@v5
@@ -87,7 +87,7 @@ jobs:
       - name: Check out git repository.
         uses: actions/checkout@v4
         with:
-          path: 'glillico.histtimeformat'
+          path: 'glillico.deploy_histtimeformat'
 
       - name: Setup python 3.
         uses: actions/setup-python@v5

@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - role: glillico.histtimeformat
+    - role: glillico.deploy_histtimeformat
