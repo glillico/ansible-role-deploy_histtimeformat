@@ -1,38 +1,45 @@
-Role Name
-=========
+# Ansible Role : histtimeformat
 
-A brief description of the role goes here.
+[![CI](https://github.com/glillico/ansible-role-histtimeformat/workflows/CI/badge.svg)](https://github.com/glillico/ansible-role-histtimeformat/actions?query=workflow%3ACI)
 
-Requirements
-------------
+Copies a script into /etc/profile.d/ thart will be run at login buy the bash shell, and sets the HISTTIMEFORMAT environment variable.
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+When this is environment variable is set, the history command will show the date and time the command was run using the configured format which is this case is `DD/MM/YY HH:MM:SS`
 
-Role Variables
---------------
+### Environment variable set.
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+```
+1355  18/06/24 09:07:10 ls
+```
 
-Dependencies
-------------
+### Environment variable not set.
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+```
+1355  ls
+```
 
-Example Playbook
-----------------
+## Requirements
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+None.
+
+## Role Variables
+
+None.
+
+## Dependencies
+
+None.
+
+## Example Playbook
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - glillico.histtimeformat
 
-License
--------
+## License
 
-BSD
+MIT
 
-Author Information
-------------------
+## Author Information
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Created in 2024 by Graham Lillico.
